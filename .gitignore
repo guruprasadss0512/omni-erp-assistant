@@ -1,0 +1,65 @@
+# ==========================================
+# Omni-Channel ERP Assistant .gitignore
+# ==========================================
+
+# --- Secrets & Credentials (CRITICAL) ---
+.env
+.env.*
+*.pem
+
+# --- Virtual Environments ---
+venv/
+env/
+ENV/
+.venv/
+
+# --- Python Artifacts ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Audio & Media Files ---
+# Ignore the temporary files downloaded from WhatsApp or used for Whisper testing
+*.ogg
+*.mp3
+*.wav
+*.flac
+*.m4a
+
+# --- OS & IDE Files ---
+# VS Code
+.vscode/
+*.code-workspace
+# Windows / WSL
+Thumbs.db
+Desktop.ini
+# Mac (Just in case you switch machines)
+.DS_Store
+
+# --- Logs & Databases ---
+*.log
+*.sqlite3
+
+# --- Testing & Type Checking ---
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
